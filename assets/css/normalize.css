@@ -1,0 +1,24 @@
+* {
+	padding: 0;
+	margin: 0;
+
+	font-family: var(--font-family);
+}
+
+body {
+	min-height: 100vh;
+	background: var(--color-bg-primary);
+}
+
+body::after {
+	content: "";
+	position: fixed;
+	display: block;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url("../images/res/noise-20p.png");
+	background-size: cover;
+	pointer-events: none;
+}

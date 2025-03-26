@@ -1,0 +1,208 @@
+/* Blocks, sections and containers */
+
+.section {
+	padding: var(--spacing-block) 0;
+}
+
+.content-wrapper {
+	box-sizing: content-box;
+	max-width: var(--max-width-content-wrapper);
+	padding: 0 var(--content-area-padding);
+	margin: 0 auto;
+}
+
+
+/* Text elements */
+
+.font-content-xs {
+	font-size: var(--font-size-content-xs);
+	font-weight: 600;
+	letter-spacing: var(--letter-spacing);
+	line-height: 110%;
+}
+.font-content-s {
+	font-size: var(--font-size-content-s);
+	font-weight: 500;
+	letter-spacing: var(--letter-spacing);
+	line-height: 110%;
+}
+.font-content-m {
+	font-size: var(--font-size-content-m);
+	font-weight: 400;
+	letter-spacing: var(--letter-spacing);
+	line-height: 120%;
+}
+.font-content-l {
+	font-size: var(--font-size-content-l);
+	font-weight: 400;
+	letter-spacing: var(--letter-spacing);
+	line-height: 110%;
+}
+
+.font-heading-s {
+	font-size: var(--font-size-heading-s);
+	font-weight: 600;
+	letter-spacing: var(--letter-spacing);
+	line-height: 110%;
+}
+.font-heading-m {
+	font-size: var(--font-size-heading-m);
+	font-weight: 900;
+	letter-spacing: var(--letter-spacing);
+	line-height: 110%;
+}
+.font-heading-l {
+	font-size: var(--font-size-heading-l);
+	font-weight: 900;
+	letter-spacing: var(--letter-spacing);
+	line-height: 105%;
+}
+.font-heading-xl {
+	font-size: var(--font-size-heading-xl);
+	font-weight: 900;
+	letter-spacing: var(--letter-spacing);
+	line-height: 110%;
+}
+.font-heading-xxl {
+	font-family: var(--font-family-big-heading);
+	font-size: var(--font-size-heading-xxl);
+	font-weight: 600;
+	letter-spacing: var(--letter-spacing);
+	line-height: 100%;
+}
+
+
+/* Buttons */
+
+.button {
+	--button-color-bg: var(--color-elem-primary);
+	--button-color-text: var(--color-bg-primary);
+	--button-color-border: transparent;
+	--button-font-size: var(--font-size-content-l);
+	--button-height: 36px;
+	--button-padding-gutter: 12px;
+	--button-flex-gap: 8px;
+
+	position: relative;
+	display: inline-flex;
+	box-sizing: border-box;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: var(--button-flex-gap);
+	padding: 0 var(--button-padding-gutter);
+	height: var(--button-height);
+	color: var(--button-color-text);
+	background: var(--button-color-bg);
+	border: 1px solid var(--button-color-border);
+	border-radius: var(--border-radius-button);
+	font-size: var(--button-font-size);
+	font-weight: 400;
+	letter-spacing: var(--letter-spacing);
+	text-decoration: none;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+	pointer-events: all;
+	transition: var(--transition-s);
+	overflow: hidden;
+}
+
+.button.is-size-s {
+	--button-font-size: var(--font-size-content-s);
+	--button-height: 32px;
+	--button-padding-gutter: 12px;
+	--button-flex-gap: 8px;
+}
+
+.button.is-size-l {
+	--button-font-size: var(--font-size-content-l);
+	--button-height: 44px;
+	--button-padding-gutter: 20px;
+	--button-flex-gap: 8px;
+}
+
+.button.is-size-xl {
+	--button-font-size: var(--font-size-content-l);
+	--button-height: 56px;
+	--button-padding-gutter: 24px;
+	--button-flex-gap: 8px;
+}
+
+.button.is-size-s .icon {
+	--icon-size: 14px;
+	transition: var(--transition-s);
+}
+
+.button.has-only-icon {
+	--button-padding-gutter: 0px;
+	width: var(--button-height);
+	justify-content: center;
+}
+
+.button .icon {
+	--icon-size: 18px;
+}
+
+.button.button.is-size-l .icon,
+.button.button.is-size-l .icon {
+	--icon-size: 20px;
+}
+
+.button.is-style-bordered {
+	--button-color-bg: transparent;
+	--button-color-text: var(--color-elem-primary);
+	--button-color-border: var(--color-elem-primary);
+}
+
+.button.is-style-transparented {
+	--button-color-bg: transparent;
+	--button-color-text: var(--color-elem-primary);
+	--button-color-border: transparent;
+}
+
+.button.is-style-transparented.button.is-size-s {
+	font-weight: 600;
+}
+
+.button.is-style-ticket {
+	--button-color-bg: var(--color-elem-accent-red);
+	--button-color-text: var(--color-elem-primary);
+	--button-color-border: transparent;
+}
+
+.button.is-style-bordered:hover,
+.button.is-style-bordered:active {
+	--button-color-bg: var(--color-elem-primary);
+	--button-color-text: var(--color-bg-primary);
+	--button-color-border: var(--color-bg-primary);
+}
+
+.button.is-style-bordered:hover .icon,
+.button.is-style-bordered:active .icon {
+	filter: brightness(0);
+}
+
+.button.is-style-ticket::after {
+	content: "";
+	position: absolute;
+	left: -50%;
+	width: 48px;
+	height: 100px;
+	transform: rotate(15deg);
+	background: linear-gradient(to right, #fff0, #fff9, #fff0);
+	filter: blur(12px);
+}
+
+.button.is-style-ticket:hover::after,
+.button.is-style-ticket:active::after {
+	left: 125%;
+	transition: var(--transition-l);
+}
+
+
+
+/* ---------- Adaptation ---------- */
+
+@media screen and (min-width: 1024px) {
+
+}

@@ -1,0 +1,46 @@
+.icon {
+	--icon-size: 18px;
+	display: inline-block;
+	width: var(--icon-size);
+	height: var(--icon-size);
+	aspect-ratio: 1/1;
+	background-size: contain;
+}
+
+.icon[type="arrow-left-circle"]  { background-image: url("../images/icons/arrow-left-circle.svg"); }
+.icon[type="arrow-left"]         { background-image: url("../images/icons/arrow-left.svg"); }
+.icon[type="arrow-right-circle"] { background-image: url("../images/icons/arrow-right-circle.svg"); }
+.icon[type="arrow-right"]        { background-image: url("../images/icons/arrow-right.svg"); }
+.icon[type="arrow-up-right"]     { background-image: url("../images/icons/arrow-up-right.svg"); }
+.icon[type="bars"]               { background-image: url("../images/icons/bars.svg"); }
+.icon[type="calendar"]           { background-image: url("../images/icons/calendar.svg"); }
+.icon[type="chevron-down"]       { background-image: url("../images/icons/chevron-down.svg"); }
+.icon[type="coffee"]             { background-image: url("../images/icons/coffee.svg"); }
+.icon[type="compas"]             { background-image: url("../images/icons/compas.svg"); }
+.icon[type="headphones"]         { background-image: url("../images/icons/headphones.svg"); }
+.icon[type="heart"]              { background-image: url("../images/icons/heart.svg"); }
+.icon[type="list"]               { background-image: url("../images/icons/list.svg"); }
+.icon[type="location-pin"]       { background-image: url("../images/icons/location-pin.svg"); }
+.icon[type="map"]                { background-image: url("../images/icons/map.svg"); }
+.icon[type="minus"]              { background-image: url("../images/icons/minus.svg"); }
+.icon[type="moon"]               { background-image: url("../images/icons/moon.svg"); }
+.icon[type="mouse-pointer"]      { background-image: url("../images/icons/mouse-pointer.svg"); }
+.icon[type="navigation"]         { background-image: url("../images/icons/navigation.svg"); }
+.icon[type="plus"]               { background-image: url("../images/icons/plus.svg"); }
+.icon[type="star"]               { background-image: url("../images/icons/star.svg"); }
+.icon[type="sunrise-n-sunset"]   { background-image: url("../images/icons/sunrise-n-sunset.svg"); }
+.icon[type="tent"]               { background-image: url("../images/icons/tent.svg"); }
+.icon[type="vk"]                 { background-image: url("../images/icons/vk.svg"); }
+.icon[type="x"]                 { background-image: url("../images/icons/x.svg"); }
+
+.icon.is-color-element-primary {
+	filter: none;
+}
+
+.icon.is-color-bg-primary {
+	filter: brightness(0);
+}
+
+.icon.is-color-border-primary {
+	filter: brightness(100%) grayscale(80%);
+}

@@ -1,0 +1,64 @@
+:root {
+	--font-family: "Rubik", sans-serif;
+	--font-family-big-heading: "Oi", serif;
+	--letter-spacing: -0.005em;
+	--font-size-content-xs: 12px;
+	--font-size-content-s: 14px;
+	--font-size-content-m: 16px;
+	--font-size-content-l: 20px;
+	--font-size-heading-s: 24px;
+	--font-size-heading-m: 32px;
+	--font-size-heading-l: 42px;
+	--font-size-heading-xl: 40px;
+	--font-size-heading-xxl: 64px;
+	
+	
+	--color-elem-primary: #FFFFFF;
+	--color-elem-secondary: #787878;
+	--color-elem-secondary-transparent-40: #FFFFFF66;
+	--color-elem-secondary-transparent-20: #FFFFFF33;
+	--color-elem-accent-violet: #8B5AF6;
+	--color-elem-accent-pink: #F65ADC;
+	--color-elem-accent-blue: #107384;
+	--color-elem-accent-cyan: #2DB6CD;
+	--color-elem-accent-green: #2A633C;
+	--color-elem-accent-orange: #E65118;
+	--color-elem-accent-red: #CB1C1B;
+	--color-bg-primary: #131210;
+	--color-bg-secondary: #1B1916;
+	--color-bg-accent-blue: #2054C5;
+	--color-bg-accent-yellow: #DEB200;
+	--color-bg-accent-orange: #FD5B1D;
+	--color-bg-accent-green: #6AC032;
+	--color-bg-accent-red: #FE3231;
+	--color-bg-accent-violet: #8B5AF6;
+	--color-border-primary: #242120;
+	--color-border-hightlight: #0F1115;
+	
+	
+	--border-radius-button: 50px;
+	--border-radius-card-s: 1px;
+	--border-radius-card-m: 4px;
+	--border-radius-card-l: 8px;
+
+	--max-width-content-wrapper: 1280px;
+	--main-header-height: 76px;
+	--content-area-padding: 16px;
+	--column-count: 12;
+	--space-column-gap: 12px;
+	--space-column-plus-gap: calc((var(--max-width-content-wrapper) + var(--space-column-gap)) / var(--column-count));
+	--space-column: calc(var(--space-column-plus-gap) - var(--space-column-gap));
+	--space-column-2: calc((var(--space-column-plus-gap)) * 2 - var(--space-column-gap));
+	--space-column-3: calc((var(--space-column-plus-gap)) * 3 - var(--space-column-gap));
+	--space-column-4: calc((var(--space-column-plus-gap)) * 4 - var(--space-column-gap));
+	--space-column-6: calc((var(--space-column-plus-gap)) * 6 - var(--space-column-gap));
+	--space-column-8: calc((var(--space-column-plus-gap)) * 8 - var(--space-column-gap));
+
+	--spacing-article: 16px;
+	--spacing-block: 64px;
+
+		/* Transition times */
+		--transition-s: 150ms cubic-bezier(0.12, 0, 0.39, 0);
+		--transition-m: 250ms cubic-bezier(0.12, 0, 0.39, 0);
+		--transition-l: 350ms cubic-bezier(0.12, 0, 0.39, 0);
+}
