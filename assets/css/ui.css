@@ -174,7 +174,7 @@
 .button.is-style-bordered:active {
 	--button-color-bg: var(--color-elem-primary);
 	--button-color-text: var(--color-bg-primary);
-	--button-color-border: var(--color-bg-primary);
+	--button-color-border: var(--color-elem-primary);
 }
 
 .button.is-style-bordered:hover .icon,

@@ -53,6 +53,7 @@
 	--space-column-4: calc((var(--space-column-plus-gap)) * 4 - var(--space-column-gap));
 	--space-column-6: calc((var(--space-column-plus-gap)) * 6 - var(--space-column-gap));
 	--space-column-8: calc((var(--space-column-plus-gap)) * 8 - var(--space-column-gap));
+	--space-column-10: calc((var(--space-column-plus-gap)) * 10 - var(--space-column-gap));
 
 	--spacing-article: 16px;
 	--spacing-block: 64px;
