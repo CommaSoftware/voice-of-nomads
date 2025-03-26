@@ -16,8 +16,10 @@
 }
 
 .main-header__buttons-menu li {
+	position: relative;
 	list-style-type: none;
 }
+
 
 .main-header__buttons-menu.is-opened #buttonToggleNav .icon[type="bars"],
 .main-header__buttons-menu:not(.is-opened) #buttonToggleNav .icon[type="x"] {
@@ -32,6 +34,30 @@
 	#buttonToggleNav {
 		display: none;
 	}
+
+	.main-header__buttons-menu ul ul {
+		position: absolute;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		width: 50vw;
+		padding-top: 16px;
+		margin-bottom: -16px;
+		pointer-events: all;
+	}
+	
+	.main-header__buttons-menu ul li:not(:hover) > ul {
+		display: none;
+	}
+	
+	.main-header__buttons-menu ul li:hover .button {
+		--button-color-bg: var(--color-elem-primary);
+		--button-color-text: var(--color-bg-primary);
+		--button-color-border: var(--color-bg-primary);
+	}
+	
+	.main-header__buttons-menu ul li:hover .button .icon {
+		filter: brightness(0);
+	}
 }
 
 @media screen and (max-width: 1024px) {
@@ -39,7 +65,7 @@
 		transform: translateX(-100%);
 	}
 
-	.main-header__buttons-menu ul {
+	.main-header__buttons-menu > ul {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -53,13 +79,30 @@
 		transition: var(--transition-l);
 	}
 
-	.main-header__buttons-menu ul .button {
+	.main-header__buttons-menu > ul > li > .button {
 		--button-color-bg: var(--color-elem-primary);
 		--button-color-text: var(--color-bg-primary);
+		--button-color-border: transparent;
 		border-radius: 0 var(--border-radius-button) var(--border-radius-button) 0;
+		padding-left: 16px;
 	}
 
-	.main-header__buttons-menu ul .button .icon {
+	.main-header__buttons-menu > ul > li > .button .icon {
 		filter: brightness(0);
+	}
+
+	.main-header__buttons-menu ul ul {
+		position: static;
+		padding: 16px 16px 4px 16px;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		overflow: auto;
+	}
+
+	.main-header__buttons-menu ul ul .button {
+		--button-color-border: var(--color-elem-primary);
+		--button-color-text: var(--color-elem-primary);
+		--button-color-bg: transparent;
 	}
 }
