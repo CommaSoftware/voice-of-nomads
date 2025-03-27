@@ -90,17 +90,23 @@
 	line-height: 105%;
 }
 .font-heading-xl {
+	max-width: 100%;
 	color: var(--color-elem-primary);
 	font-size: var(--font-size-heading-xl);
 	font-weight: 900;
+	word-wrap: break-word;
+  hyphens: auto;
 	letter-spacing: var(--letter-spacing);
 	line-height: 110%;
 }
 .font-heading-xxl {
+	max-width: 100%;
 	color: var(--color-elem-primary);
 	font-family: var(--font-family-big-heading);
 	font-size: var(--font-size-heading-xxl);
 	text-transform: uppercase;
+	word-wrap: anywhere;
+  hyphens: auto;
 	font-weight: 400;
 	letter-spacing: 0;
 	line-height: 100%;
@@ -271,6 +277,15 @@
 
 /* ---------- Adaptation ---------- */
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 680px) {
+	.font-heading-xl {
+		font-size: var(--font-size-heading-m);
+	}
+	.font-heading-xxl {
+		font-size: var(--font-size-heading-l);
+	}
 
+	.section .content-wrapper {
+		gap: calc(var(--spacing-block)/2);
+	}
 }

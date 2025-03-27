@@ -274,3 +274,37 @@ a.schedule__item__name:active {
 .schedule__preview:nth-child(2):active .scene-card:nth-child(3) {
 	transform: translate(0px,4px);
 }
+
+
+/* ---------- Adaptation ---------- */
+
+@media screen and (max-width: 1024px) {
+	.schedule__preview:nth-child(2) {
+		display: none;
+	}
+
+	.schedule__preview-block {
+		grid-template-columns: 1fr;
+	}
+	
+}
+
+@media screen and (max-width: 680px) {
+	.scene-card {
+		scale: .75;
+		translate: -12% -12%;
+	}
+
+	.schedule__header {
+		flex-wrap: wrap;
+	}
+
+	.schedule__header::before,
+	.schedule__header::after {
+		display: none;
+	}
+
+	.schedule__header__item:not(:first-of-type)::before {
+		display: none;
+	}
+}

@@ -167,4 +167,31 @@
 		transform: translate(-12px, -12px);
 	}
 	
+	.line-up__artists-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--space-column-gap);
+	}
+	
+	.line-up__artists-grid.is-style-list {
+		position: relative;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+}
+
+
+@media screen and (max-width: 680px) {
+	.line-up__artists-grid.is-style-list {
+		position: relative;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.line-up__artists-grid .artist__name {
+		font-size: var(--font-size-heading-s);
+	}
+
+	.line-up__artists-grid.is-style-list .artist__name {
+		font-size: var(--font-size-content-l);
+	}
 }
