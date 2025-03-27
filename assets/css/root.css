@@ -43,7 +43,10 @@
 	--gradient-violet-blue: linear-gradient(to bottom, var(--color-elem-accent-violet), var(--color-bg-accent-blue));
 	--gradient-violet-purple: linear-gradient(to bottom, var(--color-elem-accent-pink), var(--color-elem-accent-violet));
 	
-	
+	/* Shadows */
+	--shadow-header: 0px 0px 4px #00000022;
+
+
 	--border-radius-button: 50px;
 	--border-radius-card-s: 1px;
 	--border-radius-card-m: 4px;
