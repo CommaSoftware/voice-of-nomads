@@ -18,6 +18,7 @@ body::after {
 	top: 0;
 	right: 0;
 	bottom: 0;
+	z-index: 1000;
 	background-image: url("../images/res/noise-20p.png");
 	background-size: cover;
 	pointer-events: none;

@@ -2,6 +2,7 @@
 	position: relative;
 	box-sizing: border-box;
 	height: 100vh;
+	min-height: 616px;
 }
 
 .hello__video {
@@ -21,5 +22,6 @@
 
 .hello__logo {
 	max-width: var(--space-column-10);
+	width: 100%;
 	margin: auto;
 }
