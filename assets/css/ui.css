@@ -132,6 +132,7 @@
 	align-items: center;
 	gap: var(--button-flex-gap);
 	padding: 0 var(--button-padding-gutter);
+	width: max-content;
 	height: var(--button-height);
 	color: var(--button-color-text);
 	background: var(--button-color-bg);
@@ -199,7 +200,7 @@
 	filter: brightness(94%);
 }
 
-.button:not(.is-style-ticket, .is-style-bordered) .icon {
+.button:not(.is-style-ticket, .is-style-bordered, .is-style-transparented) .icon {
 	filter: brightness(0);
 }
 
