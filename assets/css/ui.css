@@ -275,6 +275,10 @@
 	text-align: center;
 }
 
+.headings-block .font-content-l {
+	color: var(--color-elem-secondary);
+}
+
 
 /* ---------- Adaptation ---------- */
 
