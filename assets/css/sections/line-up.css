@@ -54,11 +54,11 @@
 	transition: var(--transition-time-l) var(--transition-cubic-easeOutQuint);
 }
 
-.artist:hover .artist__cover {
+.line-up__artists-grid:not(.is-style-list) .artist:hover .artist__cover {
 	transform: translate(-24px, -24px);
 }
 
-.artist:hover .artist__cover img {
+.line-up__artists-grid:not(.is-style-list) .artist:hover .artist__cover img {
 	transform: scale(125%);
 }
 
@@ -163,7 +163,7 @@
 		height: calc(100% + 24px);
 	}
 
-	.artist:hover .artist__cover {
+	.line-up__artists-grid:not(.is-style-list) .artist:hover .artist__cover {
 		transform: translate(-12px, -12px);
 	}
 	
