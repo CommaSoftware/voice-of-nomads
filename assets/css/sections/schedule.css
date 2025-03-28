@@ -195,13 +195,13 @@ a.schedule__item__name:active {
 	aspect-ratio: 16/9;
 	background: var(--color-bg-secondary);
 	overflow: hidden;
-	transition: var(--transition-m);
+	transition: var(--transition-time-l) var(--transition-cubic-easeOutQuint);
 }
 
 .schedule__preview .scene-card {
 	position: absolute;
 	box-shadow: 0 2px 24px #00000040;
-	transition: var(--transition-m);
+	transition: var(--transition-time-l) var(--transition-cubic-easeOutQuint);
 }
 
 .schedule__preview:nth-child(1) .scene-card:nth-child(2) {
