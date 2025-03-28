@@ -229,4 +229,26 @@
 		--button-color-border: transparent;
 		--button-color-text: var(--color-bg-primary);
 	}
+
+	.licenses-list {
+		right: 50%;
+		transform: translateX(50%);
+		max-width: 50vw;
+	}
+
+	.licenses-list::after {
+		right: 50%;
+	}
+}
+
+
+@media screen and (min-width: 390px) and (max-width: 525px) {
+	.licenses-list {
+		right: 0;
+		transform: none;
+	}
+
+	.licenses-list::after {
+		right: 0;
+	}
 }
