@@ -1,0 +1,14 @@
+@keyframes floatFromBottom {
+	0% {opacity: 0; transform: translateY(15px)}
+	100% {opacity: 1; transform:translateX(0)}
+}
+
+@keyframes floatFromTop {
+	0% {opacity: 0; transform: translateY(-15px)}
+	100% {opacity: 1; transform:translateX(0)}
+}
+
+@keyframes floatFromLeft {
+	0% {opacity: 0; transform: translateX(-15px)}
+	100% {opacity: 1; transform:translateX(0)}
+}

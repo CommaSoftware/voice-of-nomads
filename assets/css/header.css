@@ -58,7 +58,7 @@
 	}
 
 	.main-header__buttons-menu ul li:hover > ul {
-		animation: floatFromBottom var(--transition-time-l) var(--transition-cubic-easeOutQuint);
+		animation: floatFromTop var(--transition-time-l) var(--transition-cubic-easeOutQuint);
 	}
 	
 	.main-header__buttons-menu ul li:hover .button {
