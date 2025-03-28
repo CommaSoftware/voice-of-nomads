@@ -1,0 +1,25 @@
+#partners {
+	background-image: url("../../images/res/partners-bg.svg");
+	background-repeat: repeat;
+}
+
+#partners .content-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+
+.partner {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 8px 24px;
+	width: min-content;
+	height: 64px;
+	border-radius: 32px;
+	border: 1px solid var(--color-elem-secondary);
+	text-decoration: none;
+}

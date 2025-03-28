@@ -72,6 +72,7 @@
 	font-size: var(--font-size-heading-s);
 	font-weight: 600;
 	letter-spacing: var(--letter-spacing);
+	text-transform: uppercase;
 	line-height: 110%;
 }
 .font-heading-m {
@@ -87,6 +88,7 @@
 	font-size: var(--font-size-heading-l);
 	font-weight: 900;
 	letter-spacing: var(--letter-spacing);
+	text-transform: uppercase;
 	line-height: 105%;
 }
 .font-heading-xl {
