@@ -86,7 +86,7 @@
 .font-heading-l {
 	color: var(--color-elem-primary);
 	font-size: var(--font-size-heading-l);
-	font-weight: 900;
+	font-weight: 800;
 	letter-spacing: var(--letter-spacing);
 	text-transform: uppercase;
 	line-height: 105%;
@@ -95,9 +95,10 @@
 	max-width: 100%;
 	color: var(--color-elem-primary);
 	font-size: var(--font-size-heading-xl);
-	font-weight: 900;
+	font-weight: 800;
 	word-wrap: break-word;
   hyphens: auto;
+	text-transform: uppercase;
 	letter-spacing: var(--letter-spacing);
 	line-height: 110%;
 }
