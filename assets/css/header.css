@@ -17,6 +17,7 @@
 }
 
 .main-header .content-wrapper,
+.main-header__buttons-menu,
 .main-header__buttons-menu ul {
 	display: flex;
 	justify-content: space-between;
@@ -38,7 +39,7 @@
 
 /* ---------- Adaptation ---------- */
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
 	#buttonToggleNav {
 		display: none;
 	}
@@ -148,5 +149,15 @@
 		--button-color-border: transparent;
 		--button-color-text: var(--color-bg-primary);
 		--button-color-bg: var(--color-elem-primary);
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.main-header__buttons-menu {
+		display: contents;
+	}
+
+	#buttonHome {
+		margin-right: auto;
 	}
 }
