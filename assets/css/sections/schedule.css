@@ -39,7 +39,8 @@
 /* Areas of festival */
 
 .scene-card {
-	width: var(--space-column-3);
+	width: 100%;
+	max-width: var(--space-column-3);
 	background-color: var(--color-border-primary);
 }
 
@@ -290,7 +291,7 @@ a.schedule__item__name:active {
 }
 
 @media screen and (max-width: 680px) {
-	.scene-card {
+	.schedule__preview .scene-card {
 		scale: .75;
 		translate: -12% -12%;
 	}
