@@ -22,4 +22,13 @@
 	border-radius: 32px;
 	border: 1px solid var(--color-elem-secondary);
 	text-decoration: none;
+	transition: 
+		border var(--transition-time-m) var(--transition-cubic-easeOutQuint),
+		box-shadow var(--transition-time-l) var(--transition-cubic-easeOutQuint) calc(var(--transition-time-m)/4);
+}
+
+.partner:hover,
+.partner:active {
+	border: 1px solid var(--color-elem-primary);
+	box-shadow: 0 0px 64px #FFFFFF66, inset 0 0px 24px #FFFFFF55;
 }
