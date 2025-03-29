@@ -332,6 +332,10 @@
 	color: var(--color-elem-secondary);
 }
 
+.headings-block .button {
+	margin-top: 8px;
+}
+
 
 /* ---------- Adaptation ---------- */
 
