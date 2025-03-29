@@ -3,6 +3,7 @@
 	margin: 0;
 
 	font-family: var(--font-family);
+	-webkit-tap-highlight-color: transparent;
 }
 
 body {
