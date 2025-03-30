@@ -1,0 +1,76 @@
+#artist .content-wrapper {
+	display: grid;
+	grid-template-columns: var(--space-column-4) 1fr;
+
+}
+
+#artist .content-wrapper .headings-block {
+	grid-column: 1 / -1;
+}
+
+.artist__content {
+	background: var(--color-border-primary);
+	height: fit-content;
+}
+
+.artist__content .artist {
+	aspect-ratio: 2/1;
+}
+
+.artist__content .artist {
+	align-items: center;
+}
+
+.artist__content .buttons-list {
+	padding-bottom: 24px;
+}
+
+#artist::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to bottom, var(--artist-color-gradient), transparent);
+	opacity: .25;
+}
+
+#artist.is-color-red, #artist { --artist-color-gradient: var(--color-elem-accent-red); }
+#artist.is-color-yellow { --artist-color-gradient: var(--color-bg-accent-yellow); }
+#artist.is-color-orange { --artist-color-gradient: var(--color-elem-accent-orange); }
+#artist.is-color-green { --artist-color-gradient: var(--color-elem-accent-green); }
+#artist.is-color-blue { --artist-color-gradient: var(--color-elem-accent-blue); }
+#artist.is-color-violet { --artist-color-gradient: var(--color-elem-accent-violet); }
+#artist.is-color-pink { --artist-color-gradient: var(--color-elem-accent-pink); }
+
+.artist__content .wp-content {
+	padding: 24px;
+}
+
+.artist__content .artist__cover {
+	width: initial;
+	aspect-ratio: 1/1;
+	left: 50%;
+	translate: -50%;
+}
+
+
+/* ---------- Adaptation ---------- */
+
+@media screen and (min-width: 1312px) {
+	#artist .line-up__artists-grid.is-style-list {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 1312px) {
+	#artist .content-wrapper {
+		grid-template-columns: 1fr;
+	}
+
+	#artist .artist__content {
+		grid-row-start: 1;
+	}
+}

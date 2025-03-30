@@ -1,0 +1,16 @@
+.wp-content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-article);
+
+	color: var(--color-elem-primary);
+	font-size: var(--font-size-content-m);
+	font-weight: 400;
+	letter-spacing: var(--letter-spacing);
+	line-height: 120%;
+}
+
+.wp-content iframe {
+	display: block;
+	width: 100% !important;
+}
