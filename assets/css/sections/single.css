@@ -1,0 +1,123 @@
+.single-block {
+	display: grid;
+	grid-template-columns: var(--space-column-4) 1fr;
+	background-color: var(--color-border-primary);
+	border-radius: var(--border-radius-card-m);
+	overflow: hidden;
+}
+
+.single-block .news-card__cover {
+	grid-row-start: 1;
+	grid-column-start: 1;
+}
+
+.single-block .wp-content {
+	padding: 36px 24px 36px 36px;
+}
+
+
+.single-pagination {
+	display: grid;
+	grid-template-columns: 1fr var(--space-column-4) 1fr;
+	gap: var(--space-column-gap);
+}
+
+.single-pagination__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 24px;
+	padding: 24px;
+	text-align: left;
+	text-decoration: none;
+	border-radius: var(--border-radius-card-m);
+	background-color: var(--color-border-primary);
+	transition: var(--transition-time-l) var(--transition-cubic-easeOutQuint);
+}
+
+.single-pagination__item:last-of-type {
+	align-items: flex-end;
+}
+
+.single-pagination__item:hover,
+.single-pagination__item:active {
+	background-color: var(--color-bg-secondary);
+}
+
+.single-pagination__heading {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+	padding: 24px;
+	background-color: var(--color-border-primary);
+	border-radius: var(--border-radius-card-m);
+}
+
+.single-pagination__heading__title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.single-pagination__heading__title .font-content-m {
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+
+/* ---------- Adaptation ---------- */
+
+@media screen and (min-width: 680px) {
+	.single-block .news-card {
+		grid-column: 1 / -1;
+	
+		display: grid;
+		grid-template-columns: var(--space-column-4) 1fr;
+		gap: var(--space-column-gap);
+		width: auto;
+		max-width: initial;
+		min-height: auto;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.single-block .news-card,
+	.single-block {
+		grid-template-columns: 1fr;
+	}
+
+	.single-block .sidebar-wrapper {
+		grid-row-start: 3;
+	}
+
+	.single-block .wp-content {
+		padding: 36px 24px 0px 24px;
+	}
+
+	.single-pagination {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.single-pagination__heading {
+		grid-column: 1 / -1;
+		grid-row-start: -1;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.single-block .news-card {
+		display: flex;
+	}
+
+	#single .content-wrapper {
+		padding: 0;
+	}
+
+	.single-pagination {
+		margin-top: -32px;
+		padding: 12px;
+		grid-template-columns: 1fr 1fr;
+	}
+}

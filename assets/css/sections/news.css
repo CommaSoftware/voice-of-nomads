@@ -165,7 +165,8 @@
 }
 
 @media screen and (min-width: 680px) {
-	.news-card:hover {
+	#news .news-card:hover,
+	#blog .news-card:hover {
 		transform: scale(102%) translate(0px, 1px) rotateX(-1deg);
 	}
 }

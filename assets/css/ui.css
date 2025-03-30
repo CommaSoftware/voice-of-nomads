@@ -134,6 +134,15 @@
 	line-height: 100%;
 }
 
+.font-content-xs.is-color-grey,
+.font-content-s.is-color-grey,
+.font-content-m.is-color-grey,
+.font-content-l.is-color-grey,
+.font-content-xl.is-color-grey,
+.font-content-xxl .is-color-grey{
+	color: var(--color-elem-secondary);
+}
+
 
 /* Buttons */
 
