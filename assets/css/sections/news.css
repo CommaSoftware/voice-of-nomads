@@ -27,7 +27,7 @@
 	transition: var(--transition-time-l) var(--transition-cubic-easeOutQuint);
 }
 
-.news-card:nth-child(n + 4) {
+.news-grid .news-card:nth-child(n + 4) {
 	display: none;
 }
 
@@ -154,7 +154,7 @@
 		max-width: var(--space-column-8);
 	}
 
-	.news-card:nth-child(n + 4) {
+	.news-grid .news-card:nth-child(n + 4) {
 		display: flex;
 	}
 

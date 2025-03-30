@@ -1,0 +1,118 @@
+.blog__content {
+	display: grid;
+}
+
+.blog__content__sidebar-wrapper {
+	grid-column: -2 / -1;
+	grid-row: 1 / span 4;
+}
+
+.blog__content__pagination {
+	grid-column: 1 / span 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 8px;
+}
+
+.sidebar {
+	position: sticky;
+	top: 76px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.sidebar__block {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 36px 24px;
+	background-color: var(--color-border-primary);
+	border-radius: var(--border-radius-card-s);
+}
+
+.sidebar__block__heading {
+	color: var(--color-elem-secondary);
+}
+
+.sidebar-block__links {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.sidebar-block__categories {
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar-block__categories__item {
+	position: relative;
+	z-index: 2;
+	padding: 20px 0;
+	color: var(--color-elem-primary);
+	font-size: var(--font-size-content-s);
+	font-weight: 500;
+	letter-spacing: var(--letter-spacing);
+	line-height: 110%;
+	text-decoration: none;
+}
+
+.sidebar-block__categories__item.is-current::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: -1px;
+	left: -24px;
+	right: -24px;
+	width: calc(100% + 48px);
+	background: var(--color-bg-secondary);
+}
+
+
+.sidebar-block__categories__item.is-current::after {
+	display: none;
+}
+
+.sidebar-block__categories__item::after {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to right, var(--color-elem-primary), transparent);
+	opacity: 0.45;
+	transition: var(--transition-time-l) var(--transition-cubic-easeOutQuint);
+}
+
+.sidebar-block__categories__item:hover::after,
+.sidebar-block__categories__item:active::after {
+
+	opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+	.blog__content__sidebar-wrapper,
+	.sidebar {
+		display: contents;
+	}
+
+	.blog__content__pagination {
+		grid-column: 1 / -1;
+		margin-bottom: 32px;
+	}
+
+	#blog .content-grid {
+		max-width: var(--space-column-8);
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	#blog .content-grid {
+		max-width: var(--space-column-4);
+	}
+}
